@@ -56,7 +56,7 @@
         
     <div class="editable-style silex-element-content silex-id-1478366444112-0 container-element website-width"><div class="editable-style text-element silex-id-1584020088435-3 style-top-bar"><div class="silex-element-content normal"><p><u>tél : 07 64 01 22 50</u></p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></div><a class="editable-style container-element silex-id-1629366352620-1" href="https://www.facebook.com/France-R%C3%A9sine-le-sp%C3%A9cialiste-des-sols-en-r%C3%A9sine-107635434949805"></a><div class="editable-style text-element silex-id-1629456610841-263 silex-component-hamburger prevent-resizable prevent-auto-z-index hide-on-desktop"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1652950714428_838 closed">
+<div class="hamburger-menu_1653895581138_267 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -67,7 +67,7 @@
         <nav class="">
             <ul>
             
-                <li><a href="index.html" class="">accueil</a></li>
+                <li><a href="index.html">accueil</a></li>
             
                 <li><a href="exterieur.html">extérieur</a></li>
             
@@ -75,9 +75,9 @@
             
                 <li><a href="etancheite.html" title="Étanchéité">étanchéité</a></li>
             
-                <li><a href="realisations.html" class="">réalisations</a></li>
+                <li><a href="realisations.html">réalisations</a></li>
             
-                <li><a href="contact.html">contact</a></li>
+                <li><a href="contact.html" class="">contact</a></li>
             
             </ul>
         </nav>
@@ -89,13 +89,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1652950714428_838').classList.remove('open');
-    document.querySelector('.hamburger-menu_1652950714428_838').classList.add('closed');
+    document.querySelector('.hamburger-menu_1653895581138_267').classList.remove('open');
+    document.querySelector('.hamburger-menu_1653895581138_267').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1652950714428_838').classList.add('open');
-    document.querySelector('.hamburger-menu_1652950714428_838').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1653895581138_267').classList.add('open');
+    document.querySelector('.hamburger-menu_1653895581138_267').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -105,7 +105,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1652950714428_838').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1653895581138_267').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -113,10 +113,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1652950714428_838 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1653895581138_267 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1652950714428_838 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1653895581138_267 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
