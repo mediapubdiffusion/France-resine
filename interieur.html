@@ -4,12 +4,12 @@
     <!-- leave this for stats and Silex version check -->
     <meta name="generator" content="Silex v2.2.14">
     <!-- End of generator meta tag -->
-    <script src="https://editor.silex.me/static/2.12/jquery.js"></script>
+    <script src="js/jquery.js"></script>
     
     
-    <script src="https://editor.silex.me/static/2.12/front-end.js"></script>
-    <link rel="stylesheet" href="https://editor.silex.me/static/2.12/normalize.css">
-    <link rel="stylesheet" href="https://editor.silex.me/static/2.12/front-end.css">
+    <script src="js/front-end.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/front-end.css">
 
     
     <script class="silex-script"></script>
@@ -56,7 +56,7 @@
         
     <div class="editable-style silex-element-content silex-id-1478366444112-0 container-element website-width"><div class="editable-style text-element silex-id-1584020088435-3 style-top-bar"><div class="silex-element-content normal"><p><u>tél : 07 64 01 22 50</u></p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></div><a class="editable-style container-element silex-id-1629366352620-1" href="https://www.facebook.com/France-R%C3%A9sine-le-sp%C3%A9cialiste-des-sols-en-r%C3%A9sine-107635434949805"></a><div class="editable-style text-element silex-id-1629456610841-263 silex-component-hamburger prevent-resizable prevent-auto-z-index hide-on-desktop"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1662128652393_162 closed">
+<div class="hamburger-menu_1662278342686_638 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -69,7 +69,7 @@
             
                 <li><a href="index.html" class="">accueil</a></li>
             
-                <li><a href="exterieur.html" class="">extérieur</a></li>
+                <li><a href="exterieur.html">extérieur</a></li>
             
                 <li><a href="interieur.html" class="page-link-active">intérieur</a></li>
             
@@ -89,13 +89,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1662128652393_162').classList.remove('open');
-    document.querySelector('.hamburger-menu_1662128652393_162').classList.add('closed');
+    document.querySelector('.hamburger-menu_1662278342686_638').classList.remove('open');
+    document.querySelector('.hamburger-menu_1662278342686_638').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1662128652393_162').classList.add('open');
-    document.querySelector('.hamburger-menu_1662128652393_162').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1662278342686_638').classList.add('open');
+    document.querySelector('.hamburger-menu_1662278342686_638').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -105,7 +105,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1662128652393_162').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1662278342686_638').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -113,10 +113,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1662128652393_162 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1662278342686_638 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1662128652393_162 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1662278342686_638 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
