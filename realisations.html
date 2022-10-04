@@ -56,7 +56,7 @@
         
     <div class="editable-style silex-element-content silex-id-1478366444112-0 container-element website-width"><div class="editable-style text-element silex-id-1584020088435-3 style-top-bar"><div class="silex-element-content normal"><p><u>tél : 07 64 01 22 50</u></p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></div><a class="editable-style container-element silex-id-1629366352620-1" href="https://www.facebook.com/France-R%C3%A9sine-le-sp%C3%A9cialiste-des-sols-en-r%C3%A9sine-107635434949805"></a><div class="editable-style text-element silex-id-1629456610841-263 silex-component-hamburger prevent-resizable prevent-auto-z-index hide-on-desktop"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1662278342686_638 closed">
+<div class="hamburger-menu_1664898620751_830 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -73,7 +73,7 @@
             
                 <li><a href="interieur.html">intérieur</a></li>
             
-                <li><a href="etancheite.html" title="Étanchéité">étanchéité</a></li>
+                <li><a href="etancheite.html" title="Étanchéité" class="">étanchéité</a></li>
             
                 <li><a href="realisations.html" class="page-link-active">réalisations</a></li>
             
@@ -89,13 +89,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1662278342686_638').classList.remove('open');
-    document.querySelector('.hamburger-menu_1662278342686_638').classList.add('closed');
+    document.querySelector('.hamburger-menu_1664898620751_830').classList.remove('open');
+    document.querySelector('.hamburger-menu_1664898620751_830').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1662278342686_638').classList.add('open');
-    document.querySelector('.hamburger-menu_1662278342686_638').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1664898620751_830').classList.add('open');
+    document.querySelector('.hamburger-menu_1664898620751_830').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -105,7 +105,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1662278342686_638').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1664898620751_830').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -113,10 +113,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1662278342686_638 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1664898620751_830 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1662278342686_638 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1664898620751_830 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
@@ -125,11 +125,11 @@
 </script>
 </div></div><div class="editable-style text-element silex-id-1584020702112-4 style-top-bar hide-on-mobile"><div class="silex-element-content normal"><p><b>France résine</b><i></i>, 1 rue des tilles Zac de la porte verte, BP91033, 54425 PULNOY&nbsp; &nbsp;|&nbsp; &nbsp; <a href="mailto:contact@france-resine.fr">contact@france-resine.fr</a>
 
-</p></div></div></div></section><section class="editable-style section-element silex-id-1629188904402-1 menu"><div class="editable-style container-element silex-id-1629188904403-2 silex-element-content prevent-draggable website-width"><a class="editable-style silex-id-1583502670680-0 container-element" href="index.html"></a><nav class="editable-style silex-id-1583502964331-1 text-element style-menu anchor-link active-menu hide-on-mobile" data-href="null"><div class="silex-element-content normal"><ul><li><p><a href="index.html" title="Accueil" class="">Accueil</a></p></li><li><p><a href="#anchor-accueil" title="accueil"></a><a href="exterieur.html" title="Sols extérieurs" class="">Extérieur</a></p></li><li><p><a href="#anchor-solutions" title="Nos solutions sur mesure"></a><a href="interieur.html" title="Sols intérieurs" class="">Intérieur</a></p></li><li><p><a href="etancheite.html" title="Étanchéité" class="">Étanchéité</a><br></p></li><li><p><a href="realisations.html" title="Réalisations" class="page-link-active">Réalisations</a></p></li><li><p><a href="interieur.html" title="Sols intérieurs" class=""></a><a href="contact.html" title="contact" class="">contact</a></p></li></ul><p><a href="#anchor-accueil" title="accueil"></a></p><p><a href="#anchor-accueil" title="accueil"></a></p></div></nav></div></section><section class="editable-style section-element silex-id-1629212469667-0 page-r-alisations page-realisations paged-element paged-element-visible"><div class="editable-style container-element silex-id-1629212469667-1 silex-element-content website-width prevent-draggable"><h1 class="editable-style text-element silex-id-1629212469667-2 style-txts-grey"><div class="silex-element-content normal"><h1>Nos&nbsp;<b>réalisations</b><br></h1></div></h1></div></section><section class="editable-style section-element silex-id-1629212650020-6 page-r-alisations page-realisations paged-element paged-element-visible"><div class="editable-style container-element silex-id-1629212650020-7 silex-element-content website-width prevent-draggable"><div class="editable-style text-element silex-id-1629212650020-8 style-txts-grey-center"><div class="silex-element-content normal"><h2>Une équipe de professionnels <u>à votre écoute</u></h2><p>Des équipes qualifiées, une structure équipée et une expertise acquise sur le terrain.<br></p></div>﻿﻿﻿</div><a class="editable-style text-element silex-id-1661864646406-1 style-btn btn-pdf" href="https://france-resine.fr/assets/pdf/france-resine-catalogue_WEB.pdf"><div class="silex-element-content normal"><p><b>catalogue </b>france-résine<br></p></div></a></div></section><section class="editable-style section-element silex-id-1611419164392-19 page-enb-d-coration-sols-et-murs-en-r-sine page-r-alisations réalisations page-realisations paged-element paged-element-visible"><div class="editable-style container-element silex-id-1611419164393-20 silex-element-content website-width prevent-draggable"><div class="editable-style container-element silex-id-1611422758029-47"></div><div class="editable-style container-element silex-id-1629279051625-2"><div class="editable-style text-element silex-id-1629281473986-3 style-txts-grey"><div class="silex-element-content normal"><p>
+</p></div></div></div></section><section class="editable-style section-element silex-id-1629188904402-1 menu"><div class="editable-style container-element silex-id-1629188904403-2 silex-element-content prevent-draggable website-width"><a class="editable-style silex-id-1583502670680-0 container-element" href="index.html"></a><nav class="editable-style silex-id-1583502964331-1 text-element style-menu anchor-link active-menu hide-on-mobile" data-href="null"><div class="silex-element-content normal"><ul><li><p><a href="index.html" title="Accueil" class="">Accueil</a></p></li><li><p><a href="#anchor-accueil" title="accueil"></a><a href="exterieur.html" title="Sols extérieurs" class="">Extérieur</a></p></li><li><p><a href="#anchor-solutions" title="Nos solutions sur mesure"></a><a href="interieur.html" title="Sols intérieurs" class="">Intérieur</a></p></li><li><p><a href="etancheite.html" title="Étanchéité" class="">Étanchéité</a><br></p></li><li><p><a href="realisations.html" title="Réalisations" class="page-link-active">Réalisations</a></p></li><li><p><a href="interieur.html" title="Sols intérieurs" class=""></a><a href="contact.html" title="contact" class="">contact</a></p></li></ul><p><a href="#anchor-accueil" title="accueil"></a></p><p><a href="#anchor-accueil" title="accueil"></a></p></div></nav></div></section><section class="editable-style section-element silex-id-1629212469667-0 page-r-alisations page-realisations paged-element paged-element-visible"><div class="editable-style container-element silex-id-1629212469667-1 silex-element-content website-width prevent-draggable"><h1 class="editable-style text-element silex-id-1629212469667-2 style-txts-grey"><div class="silex-element-content normal"><h1>Nos&nbsp;<b>réalisations</b><br></h1></div></h1></div></section><section class="editable-style section-element silex-id-1629212650020-6 page-r-alisations page-realisations paged-element paged-element-visible"><div class="editable-style container-element silex-id-1629212650020-7 silex-element-content website-width prevent-draggable"><div class="editable-style text-element silex-id-1629212650020-8 style-txts-grey-center"><div class="silex-element-content normal"><h2>Une équipe de professionnels <u>à votre écoute</u></h2><p>Des équipes qualifiées, une structure équipée et une expertise acquise sur le terrain.<br></p></div>﻿﻿﻿</div><a class="editable-style text-element silex-id-1661864646406-1 style-btn btn-pdf" href="https://france-resine.fr/assets/pdf/france-resine-catalogue_WEB.pdf"><div class="silex-element-content normal"><p><b>catalogue </b>france-résine<br></p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></a></div></section><section class="editable-style section-element silex-id-1611419164392-19 page-enb-d-coration-sols-et-murs-en-r-sine page-r-alisations réalisations page-realisations paged-element paged-element-visible"><div class="editable-style container-element silex-id-1611419164393-20 silex-element-content website-width prevent-draggable"><div class="editable-style container-element silex-id-1611422758029-47"></div><div class="editable-style container-element silex-id-1629279051625-2"><div class="editable-style text-element silex-id-1629281473986-3 style-txts-grey"><div class="silex-element-content normal"><p>
 
 Retrouvez des <b>exemples de nos réalisations</b>.
 
-</p></div></div></div><div class="editable-style container-element silex-id-1658917723943-564 row"><a class="editable-style container-element silex-id-1658917723943-568" href="./assets/realisations/02-terrasse-av-ap-min.jpg" data-lightbox="image-1" data-title="terrasse"></a><div class="editable-style html-element silex-id-1658917890554-0"><div class="silex-element-content"><video controls="" preload="auto" poster="./assets/realisations/videos/vignette.jpg" data-setup="{}" style="width: 100%; height: 100%;" width="100%" height="100%">
+</p></div></div></div><div class="editable-style container-element silex-id-1664898688455-0 row"><a class="editable-style container-element silex-id-1664898688455-1" href="./assets/realisations/22-10-plage-piscine-01.jpg" data-lightbox="image-1" data-title="piscine"></a><a class="editable-style container-element silex-id-1664898688455-2" href="./assets/realisations/22-10-plage-piscine-02.jpg" data-lightbox="image-1" data-title="piscine"></a><a class="editable-style container-element silex-id-1664898688455-3" href="./assets/realisations/22-10-plage-piscine-03.jpg" data-lightbox="image-1" data-title="piscine"></a><a class="editable-style container-element silex-id-1664898766690-4" href="./assets/realisations/22-10-plage-piscine-04.jpg" style="width: 591px; min-height: 305px;" data-lightbox="image-1" data-title="piscine"></a></div><div class="editable-style container-element silex-id-1664898928495-5 row"><a class="editable-style container-element silex-id-1664898928495-6" href="./assets/realisations/22-10-escalier-haguenau-min.jpg" data-lightbox="image-1" data-title="escalier"></a><a class="editable-style container-element silex-id-1664898928495-7" href="./assets/realisations/22-10-escalier-ph-min.jpg" data-lightbox="image-1" data-title="escalier"></a><a class="editable-style container-element silex-id-1664898928495-8" href="./assets/realisations/22-10-escalier-sol.jpg" data-lightbox="image-1" data-title="escalier"></a></div><div class="editable-style container-element silex-id-1658917723943-564 row"><a class="editable-style container-element silex-id-1658917723943-568" href="./assets/realisations/02-terrasse-av-ap-min.jpg" data-lightbox="image-1" data-title="terrasse"></a><div class="editable-style html-element silex-id-1658917890554-0"><div class="silex-element-content"><video controls="" preload="auto" poster="./assets/realisations/videos/vignette.jpg" data-setup="{}" style="width: 100%; height: 100%;" width="100%" height="100%">
 
   <source src="https://mediapubdiffusion.github.io/France-resine/assets/realisations/videos/france-resine-escalier.mp4" type="video/mp4">
 
